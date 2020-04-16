@@ -1,0 +1,137 @@
+@media screen and (max-width: 767px) {
+    .sidebar, .content-inner, .content{
+        float: none;
+        width: 100%;
+        margin-right:0;
+    }
+}
+
+body, html{
+    margin:0;
+    padding:0;
+    font-size: 62.5%;
+}
+.container{
+    max-width: 1128px;
+    margin:0 auto;
+    background-color: bisque;
+}
+.content{
+    float:left;
+    width:100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+    background-color:brown;
+}
+.content-inner{
+    margin-right:210px;
+}
+.clearfix:before,
+.clearfix:after {
+   content: " ";
+   display: table;
+}
+
+.clearfix:after {
+   clear: both;
+}
+
+.clearfix {
+   *zoom: 1;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+
+ img{
+    width: 100%;
+}
+
+img,
+picture,
+video,
+embed {
+   max-width: 100%;
+}
+.header{
+    width: 100%;
+    height: 48px;
+    margin-top: 3.6em;
+    margin-bottom: 3.6em;
+    background-color: blueviolet;
+}
+
+.logo{
+    width: 20.744680851064%; /*234px / 1128px */
+    float: left;
+}
+
+.titulo{
+    text-align: center;
+    width: 25%;
+    float: left;
+}
+
+.menu{
+   width: 74.468085106383%; /*840px / 1128px */
+   float: none;
+   text-align: center;
+}
+.menu h1{
+    float: left;
+}
+.menu ul{
+    margin:0; 
+    padding:0;
+}
+.menu ul li{
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    margin-top: 5px; 
+    padding:0;
+}
+.menu ul li a{
+    text-decoration: none;
+    display:block;
+    padding:25px;
+    color:#094c8c;
+}
+
+.menu ul li a:hover{
+    color: #f4a60d;
+}
+
+.selected{
+    color: #f4a60d;
+}
+.caixa {
+    width: 42.553191489362%; /* 264px / 1128px */
+    padding: 2.4em 4em 2.4em 4em;
+    position: absolute;
+    top: 48px;
+    background: rgba(0,0,0,0.6);
+ }
+
+ .coluna {
+    width: 23.404255319149%; /* 264px / 1128px */
+    margin-right: 2.127659574468%; /* 24 / 1128px */
+ float: left;
+ }
+ 
+ .coluna:last-child {
+    margin-right: 0;
+ }
+.footer{
+   width: 100%;
+   margin-top: 2.4em;
+   margin-bottom: 2.4em;
+   text-align: center;
+   clear: both;
+}
+
+
