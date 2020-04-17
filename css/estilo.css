@@ -32,6 +32,7 @@
     color: #ffffff;
     display: flex;
     justify-content: space-around;
+    width: 100%;
   }
 
   .titulo {
