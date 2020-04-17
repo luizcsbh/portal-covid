@@ -1,114 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>.: Portal Covid-19 :.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portal Covid-19 renui 6 notícias em diversas mídias escolhidas por
+         Luiz Santos Desenvolvedor Web, para desafio da Gama Academy"> 
+        <meta name="keywords" content="corona, covid-19, coronavírus, html5, css, Gama Academy, desafio, site"/>
+        <meta name="robots" content="index, follow">
         <link rel="sortcut icon" href="favicon.ico" type="image/x-icon" />
         <!-- Estilo customizado -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
     </head>
     <body>
-        <div class="container"></div>
-            <header>
-                <div class=logo>
-                    <img src="imagens/logo.svg" alt="Logo do Portal Covid">
-                </div>
-                <div class="navbar">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="selected" href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a  href="sobre.html">Sobre</a>
-                            </li>
-                            <li>
-                                <a  href="contato.html">Contato</a>
-                            </li>
-                            <li>
-                                <a href="saibaMais.html">Saiba Mais</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div><!--fim /navbar-->
-                
-            </header> <!--fim /header-->
+        
+        <header class="header">
+            <div class="titulo">
+                <h1>Portal Covid-19 <img src="imagens/alert.svg" /></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="saibaMais.html">Saiba Mais</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="titulo-news">
+            <h2 class="titulo-news">Notícias em Destaque sobre a <img class="girar" src="imagens/biohazard-32.ico">&nbsp;&nbsp;&nbsp;<span>&nbsp;Covid-19 </span><img class="girar" src="imagens/biohazard-32.ico"></h2>
+        </div>
+        <section class="news container ">
 
-            <div class="content">
-                <div id="title">
-                    <h1>Notícias em Destaque sobre a <img class="girar" src="imagens/biohazard-32.ico">&nbsp;<span> &nbsp;Covid-19 </span><img class="girar" src="imagens/biohazard-32.ico"></h1>
-                </div>
-            
-                <div class="cardnews">
-                    
-                    <div class="news">
-                        <img src="imagens/news2.jpg" alt="Máscaras Caseiras">
-                        <h3>Redes 'invisíveis' ampliam ações de solidariedade em BH</h3>
-                        <p>
-                            Um dos grupos foi formado a partir da produção de máscaras de proteção. Integrantes foram se juntando ao longo do processo
-                        </p>
-                        <a class="btn-primary" href="https://www.em.com.br/app/noticia/gerais/2020/04/13/interna_gerais,1138188/coronavirus-redes-invisiveis-ampliam-acoes-de-solidariedade-em-bh.shtml" target="_blank">Leia mais</a>
-                    </div><!--fim / news-->
-               
-                    <div class="news">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/3OoBlD3jQT2kBd4PBjduhj" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        <h3>Voices of the Pandemic</h3>
-                        <p>
-                            Crianças gritando, funcionários preocupados, pais doentes e consumidores ansiosos: Um novo olhar de dentro do nosso novo mundo.
-                        </p>
-                        <a class="btn-primary" href="https://www.nytimes.com/2020/04/13/podcasts/the-daily/coronavirus-pandemic-lives.html?" target="_blank">Leia mais</a>
-                    </div><!--fim / news-->
-                    
-                    <div class="news">
-                        <iframe src="https://www.ustream.tv/embed/recorded/126175022" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
-                        <h3>SNF Agora Conversation: One Pandemic, A World of Responses</h3>
-                        <p>
-                            Como parte de nossa nova série, "SNF Agora Conversations": a política e o monitoramento do COVID-19, junte-se a especialistas da Universidade Johns Hopkins
-                        </p>
-                        <a class="btn-primary" href="https://coronavirus.jhu.edu/live" target="_blank">Leia mais</a>
-                    </div><!--fim / news-->
-                
-                </div><!--fim / cardnews-->
+            <div class="news__item ">
+                <img src="imagens/news2.jpg" alt="Máscaras Caseiras">
+                <h3>Redes 'invisíveis' ampliam ações de solidariedade em BH</h3>
+                <p>
+                    Um dos grupos foi formado a partir da produção de máscaras de proteção. Integrantes foram se juntando ao longo do processo
+                </p>
+                <a class="btn-primary" href="https://www.em.com.br/app/noticia/gerais/2020/04/13/interna_gerais,1138188/coronavirus-redes-invisiveis-ampliam-acoes-de-solidariedade-em-bh.shtml" target="_blank">Leia mais</a>
+            </div>
 
-                <div class="cardnews">
-                    <div class="news">
-                        <img src="imagens/news1.jpg" alt="Camisa para fazer máscaras">
-                        <h3>Máscaras caseiras podem ajudar na prevenção contra o Coronavírus</h3>
-                        <p>
-                            Para proteger você e sua família, o Ministério da Saúde orienta a produção de modelos simples, de pano, que também funcionam como barreiras na propagação da doença
-                        </p>
-                        <a class="btn-primary" href="https://www.saude.gov.br/noticias/agencia-saude/46645-mascaras-caseiras-podem-ajudar-na-prevencao-contra-o-coronavirus" target="_blank">Leia mais</a>
-                    </div><!--fim / news-->
-                    
-                    <div class="news">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/6qZ7wSBbCBnTY30MKAuJhN/" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        <h3>Coronavírus - o que as crianças querem saber</h3>
-                        <p>
-                            O coronavírus pode crescer e virar um monstro? Já que o álcool em gel mata o vírus, por que não criar uma vacina com ele? ...
-                        </p>
-                        <a class="btn-primary" href="https://g1.globo.com/podcast/o-assunto/noticia/2020/03/23/o-assunto-148-coronavirus-o-que-as-criancas-querem-saber.ghtml" target="_blank">Leia mais</a>
-                    </div><!--fim / news-->
-                
-                    <div class="news">
-                        <iframe src="https://www.youtube.com/embed/n0Y2zS-sz1E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h3>Como se prevenir do novo coronavírus</h3>
-                        <p>O que você precisa saber para se protecer contra o corona vírus...</p>
-                        <a class="btn-primary" href="https://coronavirus.saude.gov.br/sobre-a-doenca#como-se-proteger" target="_blank">Leia mais</a>
-                    </div><!--fim / news-->
+            <div class="news__item">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3OoBlD3jQT2kBd4PBjduhj" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <h3>Voices of the Pandemic</h3>
+                <p>
+                    Crianças gritando, funcionários preocupados, pais doentes e consumidores ansiosos: Um novo olhar de dentro do nosso novo mundo.
+                </p>
+                <a class="btn-primary" href="https://www.nytimes.com/2020/04/13/podcasts/the-daily/coronavirus-pandemic-lives.html?" target="_blank">Leia mais</a>
+            </div>
 
-                </div><!--fim / cardnews-->
-           
-            </div> <!--fim / content-->
-            
-            <div id="rodape">
-                <footer>
-                    &copy; Copyright 2020 - Desenvolvidor por <a href="https://about.me/luizcsbh">Luiz Santos</a> Portal Covid-19
-                </footer>
-            </div><!-- fim / rodape --> 
+            <div class="news__item ">
+                <iframe src="https://www.ustream.tv/embed/recorded/126175022" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+                <h3>SNF Agora Conversation: One Pandemic, A World of Responses</h3>
+                <p>
+                    Como parte de nossa nova série, "SNF Agora Conversations": a política e o monitoramento do COVID-19, junte-se a especialistas da Universidade Johns Hopkins
+                </p>
+                <a class="btn-primary" href="https://coronavirus.jhu.edu/live" target="_blank">Leia mais</a>
+            </div>
 
-        </div><!-- fim /container -->    
+            <div class="news__item ">
+                <img src="imagens/news1.jpg" alt="Camisa para fazer máscaras">
+                <h3>Máscaras caseiras podem ajudar na prevenção contra o Coronavírus</h3>
+                <p>
+                    Para proteger você e sua família, o Ministério da Saúde orienta a produção de modelos simples, de pano, que também funcionam como barreiras na propagação da doença
+                </p>
+                <a class="btn-primary" href="https://www.saude.gov.br/noticias/agencia-saude/46645-mascaras-caseiras-podem-ajudar-na-prevencao-contra-o-coronavirus" target="_blank">Leia mais</a>
+            </div>
+
+            <div class="news__item ">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/6qZ7wSBbCBnTY30MKAuJhN/" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <h3>Coronavírus - o que as crianças querem saber</h3>
+                <p>
+                    O coronavírus pode crescer e virar um monstro? Já que o álcool em gel mata o vírus, por que não criar uma vacina com ele? ...
+                </p>
+                <a class="btn-primary" href="https://g1.globo.com/podcast/o-assunto/noticia/2020/03/23/o-assunto-148-coronavirus-o-que-as-criancas-querem-saber.ghtml" target="_blank">Leia mais</a>
+            </div>
+
+            <div class="news__item ">
+                <iframe src="https://www.youtube.com/embed/n0Y2zS-sz1E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Como se prevenir do novo coronavírus</h3>
+                <p>O que você precisa saber para se protecer contra o corona vírus...</p>
+                <a class="btn-primary" href="https://coronavirus.saude.gov.br/sobre-a-doenca#como-se-proteger" target="_blank">Leia mais</a>
+            </div>
+        </section>
+        <footer>
+            &copy; Copyright 2020 - Desenvolvidor por <a href="https://about.me/luizcsbh">Luiz Santos</a> Portal Covid-19
+        <footer>
     </body>
 </html>
-
