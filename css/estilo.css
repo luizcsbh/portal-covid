@@ -1,6 +1,56 @@
 @import url('https://fonts.cdnfonts.com/css/gotham-black');
 @import url('https://fonts.cdnfonts.com/css/major-snafu');
 @import url('https://fonts.cdnfonts.com/css/din-condensed');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -28,26 +78,35 @@
   .header {
     align-items: center;
     background-color:#AF1718;
-    border-radius: 10px 10px 0 0;
     color: #ffffff;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
     width: 100%;
+  }
+
+  .header h1{
+    font-size: 40px;
+    margin-bottom: 20px;
   }
 
   .titulo {
     color: white;
     font-family: 'Major Snafu', sans-serif;
-    margin-top: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
     padding-bottom: 10px;
     text-align: center;
     float:left;
  }
 
+ .titulo h2{
+   font-weight: bold;
+ }
+
  .titulo-news {
   font-size: 30px; 
   text-align: center;
+  width: 100%;
  }
 
 /*nav*/
@@ -95,12 +154,13 @@
   
   .news__item{
     background-color: #FCE7E9;
+    border-radius: 7px;
     padding: 10px 0px 0px 0px;
     position: relative;
     cursor: pointer;
     text-align: center;
   }
-  
+
   .news__item iframe{
     height: 200px;
   }
@@ -109,25 +169,31 @@
     max-width: 100%;
   }
   
-  .news__item h2{
-    padding: 20px 0px;
+  .news__item h3{
+    padding: 20px;
     font-weight: 700;
-    background: #282A2D;
-    color:#fff;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
+    margin: 0px 20px 0px 20px;
+        
+  }
+
+  .news__item p{
+    text-align: justify;
+    margin: 0px 20px 0px 20px;
   }
 
   /*sobre*/
   .sobre{
-    display: flex;
-    padding: 80px 20px;
+    padding: 100px 30px;
+  }
+
+  .sobre article p {
+    text-align: justify;
+    line-height: 45px;
   }
   
   .sobre a{
     display: inline-block;
     color:#AF1718;
-    
   }
   .sobre a i{
     background: #282A2D;
@@ -146,7 +212,6 @@
   .contato iframe{
     height: 905px;
     width: 100%;
-    
   }
  
   .img-perfil{
@@ -159,11 +224,13 @@
   }
 
  /* saiba mais */
-.mais-noticias ul li{
-
-  padding-bottom: 20px;
-  list-style-type:cjk-ideographic;
-}
+  .mais-noticias{
+    padding: 100px 30px;
+  }
+ .mais-noticias ul li{
+    padding-bottom: 20px;
+    list-style-type:cjk-ideographic;
+  }
 
 .mais-noticias ul li a{
 	display: inline-block;
@@ -196,8 +263,8 @@ img.scaled {
 }
 
 figcaption {
-    font-weight: bold;
-    padding: 0.5em;
+  font-weight: bold;
+  padding: 0.5em;
 }
 
 figure:hover{
@@ -222,7 +289,6 @@ figure:hover{
     text-align: center;
     bottom: 0;
     padding: 10px 0;
-    border-radius: 0 0 10px 10px;
     color: #ffffff;
     background-color: #AF1718;;
     font-weight: bold;
