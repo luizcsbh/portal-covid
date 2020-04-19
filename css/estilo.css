@@ -155,7 +155,7 @@ table {
   .news__item{
     background-color: #FCE7E9;
     border-radius: 7px;
-    padding: 10px 0px 0px 0px;
+   
     position: relative;
     cursor: pointer;
     text-align: center;
@@ -166,14 +166,13 @@ table {
   }
   
   .news__item img{
-    max-width: 100%;
+    max-width: 400px;
   }
   
   .news__item h3{
     padding: 20px;
     font-weight: 700;
     margin: 0px 20px 0px 20px;
-        
   }
 
   .news__item p{
@@ -224,27 +223,25 @@ table {
   }
 
  /* saiba mais */
-  .mais-noticias{
+  .saibamais{
     padding: 100px 30px;
   }
- .mais-noticias ul li{
+ .saibamais ul li{
     padding-bottom: 20px;
     list-style-type:cjk-ideographic;
   }
 
-.mais-noticias ul li a{
-	display: inline-block;
-	padding: 5px;
-	color:#AF1718;
-  line-height: 1.4em;
-  
-}
-  .mais-noticias ul li a:hover{
+  .saibamais ul li a{
+    display: inline-block;
+    padding: 5px;
+    color:#AF1718;
+    line-height: 1.4em;
+  }
+  .saibamais ul li a:hover{
     color: #f4a60d;
   }
 
   /*Figure*/
-  
   figure {
     float: left;
     text-align: center;
@@ -256,11 +253,7 @@ table {
     margin: 0.5em;
     padding: 0.5em;
     background-color: white;
-}
-
-img.scaled {
-    width: 100%;
-}
+  }
 
 figcaption {
   font-weight: bold;
@@ -328,9 +321,6 @@ figure:hover{
     top: -3px;
 }
 
-
-
-
 /*Animações*/
   span{
     color: red;
@@ -355,16 +345,28 @@ figure:hover{
     -moz-animation:spin 1s linear infinite;
     animation:spin 1s linear infinite;
   }
-  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  @-moz-keyframes spin {
+    100% { 
+      -moz-transform: rotate(360deg);
+    } 
+  }
+  @-webkit-keyframes spin { 
+    100% { 
+      -webkit-transform: rotate(360deg);
+    }
+ }
+  @keyframes spin { 
+    100% { 
+      -webkit-transform: rotate(360deg); transform:rotate(360deg); 
+    } 
+  }
 
   .entrada{
     animation: entradaAnim 3s;
     animation-fill-mode: forwards;
   }
 
-  @keyframes entradaAnim{
+  @keyframes entradaAnim {
     from{
         opacity: 0;
     }
@@ -376,12 +378,10 @@ figure:hover{
 
   /* responsivo */
 @media only screen and (max-width: 1060px) {
-
-
-	.news{
+  
+  .news{
 		grid-template-columns: 1fr 1fr;
 	}
-
 }
 
 @media only screen and (max-width: 960px) {
@@ -412,19 +412,12 @@ figure:hover{
 	.header nav ul {
 		padding: 20px 0px;
 		flex-direction: column;
-
 	}
 
 	.header nav ul li {
 		padding-bottom: 30px;
 	}
-
-	.faixa{
-		text-align: center;
-	}
 }
-
-
 
 @media only screen and (max-width: 600px) {
 	
@@ -438,11 +431,15 @@ figure:hover{
 		font-size: 14px;	
 	}
 
-
 	/* home news */
 
 	.news{
 		grid-template-columns: 1fr;
 	}
 
-  }
+}
+@media only screen and (max-width: 480px) {
+	
+	
+
+}
